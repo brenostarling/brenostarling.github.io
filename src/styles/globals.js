@@ -31,7 +31,23 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
+    ::-webkit-scrollbar {
+    width: 8px;
+    background-color: transparent;
+  }
 
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(175, 74, 103, 1);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #c71549;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 `;
 
 export default GlobalStyles;

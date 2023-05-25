@@ -2,6 +2,8 @@
 
 This project is part of my portfolio, showcasing my skills and work experience as a developer.
 
+To view my full portfolio, please visit [here](https://brenostarling.github.io/).
+
 ## About Me
 
 I am Breno Starling, a passionate Fullstack Developer with expertise in various technologies and frameworks. I have a strong background in web development and enjoy creating efficient and user-friendly applications.

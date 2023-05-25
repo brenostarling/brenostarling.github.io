@@ -28,6 +28,16 @@ export const BlogCard = styled.div`
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  max-height: 100%;
+  overflow: hidden;
+  transition: width 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    width: 410px;
+    max-height: none;
+  }
+
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }

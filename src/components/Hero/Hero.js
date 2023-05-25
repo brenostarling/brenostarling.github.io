@@ -19,7 +19,7 @@ const Hero = (props) => (
           </Button>
 
           <Button onClick={() => window.open('/files/resume_pt.pdf', '_blank')}>
-            Meu Curriculo
+            Meu Currículo
           </Button>
         </div>
       </LeftSection>

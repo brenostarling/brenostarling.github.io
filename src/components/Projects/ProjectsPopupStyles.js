@@ -69,15 +69,15 @@ export const PopupLongDescription = styled.p`
 
 export const SlideshowContainer = styled.div`
   height: auto%;
-  width: 60%;
+  width: ${(props) => (props.fullscreenMode ? '100%' : '60%')};
   position: relative;
   overflow: hidden;
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
-  transition: width 0.1s ease;
+  transition: width 0.3s ease;
   &:hover {
-    width: 61%;
+    width: ${(props) => (props.fullscreenMode ? '100%' : '61%')};
   }
 `;
 

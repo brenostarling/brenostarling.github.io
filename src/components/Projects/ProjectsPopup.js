@@ -3,6 +3,7 @@ import { PopupContainer, SectionTitle, PopupOverlay, TagsContainer, PopupHeader,
 
 const ProjectsPopup = ({ projeto, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [fullscreenMode, setFullscreenMode] = useState(false);
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projeto.images.length);
@@ -12,35 +13,54 @@ const ProjectsPopup = ({ projeto, onClose }) => {
         setCurrentImageIndex((prevIndex) => (prevIndex - 1 + projeto.images.length) % projeto.images.length);
     };
 
+    const toggleFullscreenMode = () => {
+        setFullscreenMode(!fullscreenMode);
+    };
+
     return (
         <PopupOverlay>
             <PopupContainer>
-                <PopupHeader>
-                    <SectionTitle>{projeto.title}</SectionTitle>
-                    <CloseButton onClick={onClose}>✖️</CloseButton>
-                </PopupHeader>
-                <SlideshowContainer>
-                    <SlideshowImage onClick={() => window.open(projeto.images[currentImageIndex], '_blank')} src={projeto.images[currentImageIndex]} />
-                    <SlideshowArrow onClick={previousImage} direction={'left'}>&lt;</SlideshowArrow>
-                    <SlideshowArrow onClick={nextImage} direction={'right'}>&gt;</SlideshowArrow>
+
+                {!fullscreenMode && (
+                    <PopupHeader>
+                        <SectionTitle>{projeto.title}</SectionTitle>
+                        <CloseButton onClick={onClose}>✖️</CloseButton>
+                    </PopupHeader>
+                )}
+
+                <SlideshowContainer fullscreenMode={fullscreenMode}>
+                    <SlideshowImage onClick={toggleFullscreenMode} src={projeto.images[currentImageIndex]} />
+                    <SlideshowArrow onClick={previousImage} direction={'left'}>
+                        &lt;
+                    </SlideshowArrow>
+                    <SlideshowArrow onClick={nextImage} direction={'right'}>
+                        &gt;
+                    </SlideshowArrow>
                 </SlideshowContainer>
-                <TagsContainer>
-                    <TitleContent>Description</TitleContent>
-                    <Hr />
-                    <PopupLongDescription>{projeto.longDescription}</PopupLongDescription>
-                </TagsContainer>
-                <TagsContainer>
-                    <TitleContent>Tech Stack</TitleContent>
-                    <Hr />
-                    <TagList>
-                        {projeto.tags.map((t, i) => {
-                            return <Tag key={i}>{t}</Tag>;
-                        })}
-                    </TagList>
-                </TagsContainer>
+
+                {!fullscreenMode && (
+                    <>
+                        <TagsContainer>
+                            <TitleContent>Description</TitleContent>
+                            <Hr />
+                            <PopupLongDescription>{projeto.longDescription}</PopupLongDescription>
+                        </TagsContainer>
+                        <TagsContainer>
+                            <TitleContent>Tech Stack</TitleContent>
+                            <Hr />
+                            <TagList>
+                                {projeto.tags.map((t, i) => {
+                                    return <Tag key={i}>{t}</Tag>;
+                                })}
+                            </TagList>
+                        </TagsContainer>
+                    </>
+                )}
+
             </PopupContainer>
         </PopupOverlay>
     );
+
 };
 
 export default ProjectsPopup;

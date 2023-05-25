@@ -39,5 +39,4 @@ node_modules
 .babelrs
 LICENSE
 package-lock.json
-package.json
 yarn.lock

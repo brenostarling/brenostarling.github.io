@@ -1,11 +1,8 @@
 {
   "name": "portfolio_nextjs",
-  "version": "0.1.1",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://brenostarling.github.io/",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out",
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start"

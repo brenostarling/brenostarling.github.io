@@ -10,7 +10,7 @@ const Header = () => (
         href="/"
         style={{ display: 'flex', alignItems: 'center', color: "white" }}>
 
-        <img src="/logo_nome.png" height={55} width={200} />
+        <img src="/logo_nome.png" height={40} width={150} style={{ marginLeft: '30px' }} />
 
       </Link>
     </Div1>

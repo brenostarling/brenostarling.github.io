@@ -12,7 +12,7 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Chat</LinkTitle>
-          <LinkItem href="https://wa.me/+5531997746798">Whatsapp</LinkItem>
+          <LinkItem href="https://wa.me/+5531997746798" target="_blank">Whatsapp</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
@@ -23,19 +23,19 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Copyright &copy; 2023 <Link href="https://github.com/brenostarling">  Breno Starling</Link>. All rights reserved.</Slogan>
+          <Slogan>Copyright &copy; 2023 <Link href="https://github.com/brenostarling" target="_blank">  Breno Starling</Link>. All rights reserved.</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/brenostarling">
+          <SocialIcons href="https://github.com/brenostarling" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/brenoishy">
+          <SocialIcons href="https://www.linkedin.com/in/brenoishy" target="_blank">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.instagram.com/brenostarling">
+          <SocialIcons href="https://www.instagram.com/brenostarling" target="_blank">
             <AiFillInstagram size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://wa.me/+5531997746798">
+          <SocialIcons href="https://wa.me/+5531997746798" target="_blank">
             <AiOutlineWhatsApp size="3rem" />
           </SocialIcons>
         </SocialContainer>

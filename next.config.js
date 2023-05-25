@@ -1,3 +1,5 @@
-export const experimental = {
-    allowedConfigNames: ['images'],
+module.exports = {
+    experimental: {
+        allowedConfigNames: ['images'],
+    },
 };

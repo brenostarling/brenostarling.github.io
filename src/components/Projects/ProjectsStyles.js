@@ -30,7 +30,7 @@ export const BlogCard = styled.div`
   width: 400px;
   max-height: 100%;
   overflow: hidden;
-  transition: width 0.3s ease;
+  transition: width 0.1s ease;
 
   &:hover {
     cursor: pointer;

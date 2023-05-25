@@ -75,6 +75,10 @@ export const SlideshowContainer = styled.div`
   margin: 0 auto;
   border-radius: 8px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  transition: width 0.1s ease;
+  &:hover {
+    width: 61%;
+  }
 `;
 
 export const SlideshowImage = styled.img`

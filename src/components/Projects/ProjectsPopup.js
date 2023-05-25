@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { PopupContainer, SectionTitle, PopupOverlay, TagsContainer, PopupHeader, PopupLongDescription, CloseButton, SlideshowContainer, SlideshowImage, SlideshowArrow, Hr, Tag, TagList, TitleContent } from './ProjectsPopupStyles';
 
 const ProjectsPopup = ({ projeto, onClose }) => {
@@ -16,6 +16,22 @@ const ProjectsPopup = ({ projeto, onClose }) => {
     const toggleFullscreenMode = () => {
         setFullscreenMode(!fullscreenMode);
     };
+
+    const handleKeyDown = (e) => {
+        if (e.key === 'ArrowLeft') {
+            previousImage();
+        } else if (e.key === 'ArrowRight') {
+            nextImage();
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
 
     return (
         <PopupOverlay>

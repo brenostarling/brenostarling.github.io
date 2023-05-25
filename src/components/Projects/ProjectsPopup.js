@@ -33,9 +33,23 @@ const ProjectsPopup = ({ projeto, onClose }) => {
         };
     }, []);
 
+    useEffect(() => {
+        const handleOutsideClick = (e) => {
+            if (!e.target.closest('.popup-container')) {
+                onClose();
+            }
+        };
+
+        document.addEventListener('mousedown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, [onClose]);
+
     return (
         <PopupOverlay>
-            <PopupContainer>
+            <PopupContainer className="popup-container">
 
                 {!fullscreenMode && (
                     <PopupHeader>

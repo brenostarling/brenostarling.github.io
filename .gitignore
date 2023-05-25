@@ -32,11 +32,5 @@ yarn-error.log*
 
 # vercel
 .vercel
-netlify
-.next
 .vscode
 node_modules
-.babelrs
-LICENSE
-package-lock.json
-yarn.lock

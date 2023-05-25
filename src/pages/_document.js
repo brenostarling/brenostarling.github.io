@@ -37,11 +37,11 @@ export default class MyDocument extends Document {
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Breno Starling - Fullstack Developer" />
           <meta property="og:description" content="I'm Breno Starling, a Fullstack Developer from Betim, MG - Brazil with over two years of experience in Fullstack development. I have expertise in Asterisk, SIP phone system, and WebRTC. Currently, I am proficient in developing frontend applications using React, Vue2, Vue3, and AngularJS, while utilizing Node.js for backend development." />
-          <meta property="og:image" content="/images/banner.png" />
+          <meta property="og:image" content="/images/banner_breno.png" />
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:title" content="Breno Starling - Fullstack Developer" />
           <meta property="twitter:description" content="I'm Breno Starling, a Fullstack Developer from Betim, MG - Brazil with over two years of experience in Fullstack development. I have expertise in Asterisk, SIP phone system, and WebRTC. Currently, I am proficient in developing frontend applications using React, Vue2, Vue3, and AngularJS, while utilizing Node.js for backend development." />
-          <meta property="twitter:image" content="/images/banner.png" />
+          <meta property="twitter:image" content="/images/banner_breno.png" />
         </Head>
         <body>
           <Main />

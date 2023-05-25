@@ -5,9 +5,15 @@ import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
 import Timeline from '../components/TimeLine/TimeLine';
 import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+import { FaArrowUp } from 'react-icons/fa';
+import { Section, FloatingButton } from '../styles/GlobalComponents';
 
 const Home = () => {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+
   return (
     <Layout>
       <Section grid>
@@ -18,6 +24,7 @@ const Home = () => {
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
+      <FloatingButton onClick={scrollToTop}><FaArrowUp /></FloatingButton>
     </Layout>
   );
 };

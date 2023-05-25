@@ -22,6 +22,29 @@ export const Section = styled.section`
     flex-direction: column;
   }
 `
+export const FloatingButton = styled.button`
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(175, 74, 103, 1);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 999;
+  transition: width 0.1s ease, height 0.1s ease; 
+  &:hover {
+    background-color: #e01b55;
+    width: 52px;
+    height: 52px;
+  }
+`;
 
 export const SectionTitle = styled.h2`
   font-weight: 800;

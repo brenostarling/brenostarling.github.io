@@ -24,8 +24,8 @@ export const PopupContainer = styled.div`
   flex-direction: column;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 1.5);
   @media ${(props) => props.theme.breakpoints.md} {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
   }
 `;
 
@@ -74,13 +74,17 @@ export const PopupLongDescription = styled.p`
   text-align: justify;
   @media ${(props) => props.theme.breakpoints.md} {
     margin: 0;
-    padding: 0;
     width: 70vw;
     max-width: 70vw;
     height: 50vh !important;
     max-height: 30vh;
+    background-color: #141d2f;
+    border-radius: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
     overflow-y: scroll;
-    padding-right: 10px;
 }
 `;
 

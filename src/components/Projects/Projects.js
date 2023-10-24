@@ -9,18 +9,16 @@ const Projects = ({ setShowButton }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openPopup = (project) => {
-    setSelectedProject(project);
+    setSelectedProject(project)
     setShowButton(false)
-    document.body.style.overflow = 'hidden';
-    document.body.style.height = '100vh';
-  };
+    document.body.style.overflow = 'hidden'
+  }
 
   const closePopup = () => {
-    setSelectedProject(null);
+    setSelectedProject(null)
     setShowButton(true)
-    document.body.style.overflow = '';
-    document.body.style.height = '';
-  };
+    document.body.style.overflow = ''
+  }
 
   return (
     <Section id="projects">

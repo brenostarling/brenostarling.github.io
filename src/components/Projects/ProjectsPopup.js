@@ -1,9 +1,28 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { PopupContainer, SectionTitle, PopupOverlay, TagsContainer, InfoContainer, PopupHeader, PopupLongDescription, CloseButton, SlideshowContainer, SlideshowImage, SlideshowArrow, Hr, Tag, TagList, TitleContent } from './ProjectsPopupStyles';
 
 const ProjectsPopup = ({ projeto, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [fullscreenMode, setFullscreenMode] = useState(false);
+
+    const descriptionRef = useRef(null);
+
+    useEffect(() => {
+        const handleTouchMove = (e) => {
+            if (descriptionRef.current && descriptionRef.current.contains(e.target)) {
+                return; // permite rolagem
+            }
+            e.preventDefault();
+        };
+
+        if (projeto) {
+            window.addEventListener('touchmove', handleTouchMove, { passive: false });
+        }
+
+        return () => {
+            window.removeEventListener('touchmove', handleTouchMove, { passive: false });
+        };
+    }, [projeto]);
 
     const nextImage = () => {
         setCurrentImageIndex((prevIndex) => (prevIndex + 1) % projeto.images.length);
@@ -73,7 +92,7 @@ const ProjectsPopup = ({ projeto, onClose }) => {
                         <InfoContainer>
                             <TitleContent>Description</TitleContent>
                             <Hr />
-                            <PopupLongDescription>{projeto.longDescription}</PopupLongDescription>
+                            <PopupLongDescription ref={descriptionRef}>{projeto.longDescription}</PopupLongDescription>
                         </InfoContainer>
                         <TagsContainer>
                             <TitleContent>Tech Stack</TitleContent>

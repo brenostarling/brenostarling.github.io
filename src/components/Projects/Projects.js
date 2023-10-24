@@ -12,12 +12,14 @@ const Projects = ({ setShowButton }) => {
     setSelectedProject(project);
     setShowButton(false)
     document.body.style.overflow = 'hidden';
+    document.body.style.height = '100vh';
   };
 
   const closePopup = () => {
     setSelectedProject(null);
     setShowButton(true)
     document.body.style.overflow = '';
+    document.body.style.height = '';
   };
 
   return (

@@ -23,6 +23,10 @@ export const PopupContainer = styled.div`
   display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 1.5);
+  @media ${(props) => props.theme.breakpoints.md} {
+  width: 100vw;
+  height: 100vh;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -36,7 +40,7 @@ export const SectionTitle = styled.h2`
   -webkit-text-fill-color: transparent;
   @media ${(props) => props.theme.breakpoints.md} {
   max-width: 90vw;
-  max-heigth: 10vh;
+  max-height: 10vh;
   font-size: 2.5rem;
   line-height: 2.5rem;
   }
@@ -59,7 +63,7 @@ export const CloseButton = styled.button`
 `;
 
 export const PopupLongDescription = styled.p`
-  width: 70%;
+  width: 70vw;
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -72,7 +76,11 @@ export const PopupLongDescription = styled.p`
     margin: 0;
     padding: 0;
     width: 70vw;
-    max-width: 70vw
+    max-width: 70vw;
+    height: 50vh !important;
+    max-height: 30vh;
+    overflow-y: scroll;
+    padding-right: 10px;
 }
 `;
 
@@ -90,8 +98,10 @@ export const SlideshowContainer = styled.div`
   }
 
     @media ${(props) => props.theme.breakpoints.md} {
-    max-width: 90vw;
-    max-heigth: 70vh;
+    width: 54vw;
+    height: 23vh;
+    max-width: 54vw;
+    max-height: 23vh;
   }
 `;
 

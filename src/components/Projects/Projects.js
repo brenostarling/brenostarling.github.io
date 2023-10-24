@@ -10,10 +10,12 @@ const Projects = () => {
 
   const openPopup = (project) => {
     setSelectedProject(project);
+    document.body.style.overflow = 'hidden';
   };
 
   const closePopup = () => {
     setSelectedProject(null);
+    document.body.style.overflow = '';
   };
 
   return (

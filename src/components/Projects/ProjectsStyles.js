@@ -34,9 +34,6 @@ export const BlogCard = styled.div`
 
   &:hover {
     cursor: pointer;
-    width: 410px;
-    max-height: none;
-    box-shadow: 3px 3px 20px rgba(255, 106, 136, 0.2);
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {

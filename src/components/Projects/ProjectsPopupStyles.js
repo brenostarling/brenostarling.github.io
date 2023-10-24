@@ -34,6 +34,12 @@ export const SectionTitle = styled.h2`
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media ${(props) => props.theme.breakpoints.md} {
+  max-width: 90vw;
+  max-heigth: 10vh;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  }
 `
 
 export const PopupHeader = styled.div`
@@ -62,13 +68,16 @@ export const PopupLongDescription = styled.p`
   line-height: 24px;
   font-size: 1.7rem;
   text-align: justify;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
+  @media ${(props) => props.theme.breakpoints.md} {
+    margin: 0;
+    padding: 0;
+    width: 70vw;
+    max-width: 70vw
 }
 `;
 
 export const SlideshowContainer = styled.div`
-  height: auto%;
+  height: 90vh;
   width: ${(props) => (props.fullscreenMode ? '100%' : '60%')};
   position: relative;
   overflow: hidden;
@@ -78,6 +87,11 @@ export const SlideshowContainer = styled.div`
   transition: width 0.3s ease;
   &:hover {
     width: ${(props) => (props.fullscreenMode ? '100%' : '61%')};
+  }
+
+    @media ${(props) => props.theme.breakpoints.md} {
+    max-width: 90vw;
+    max-heigth: 70vh;
   }
 `;
 
@@ -114,6 +128,18 @@ export const TagsContainer = styled.div`
   flex-direction: column;
   justify-content: flex-end;
   flex-grow: 1;
+`;
+
+export const InfoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+
+  @media ${(props) => props.theme.breakpoints.md} {
+    display: flex;
+    align-items: center;
+  }
 `;
 
 export const TitleContent = styled.div`

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { PopupContainer, SectionTitle, PopupOverlay, TagsContainer, PopupHeader, PopupLongDescription, CloseButton, SlideshowContainer, SlideshowImage, SlideshowArrow, Hr, Tag, TagList, TitleContent } from './ProjectsPopupStyles';
+import { PopupContainer, SectionTitle, PopupOverlay, TagsContainer, InfoContainer, PopupHeader, PopupLongDescription, CloseButton, SlideshowContainer, SlideshowImage, SlideshowArrow, Hr, Tag, TagList, TitleContent } from './ProjectsPopupStyles';
 
 const ProjectsPopup = ({ projeto, onClose }) => {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -70,11 +70,11 @@ const ProjectsPopup = ({ projeto, onClose }) => {
 
                 {!fullscreenMode && (
                     <>
-                        <TagsContainer>
+                        <InfoContainer>
                             <TitleContent>Description</TitleContent>
                             <Hr />
                             <PopupLongDescription>{projeto.longDescription}</PopupLongDescription>
-                        </TagsContainer>
+                        </InfoContainer>
                         <TagsContainer>
                             <TitleContent>Tech Stack</TitleContent>
                             <Hr />

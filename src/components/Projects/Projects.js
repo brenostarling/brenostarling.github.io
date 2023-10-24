@@ -5,16 +5,18 @@ import ProjectsPopup from './ProjectsPopup'
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
-const Projects = () => {
+const Projects = ({ setShowButton }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openPopup = (project) => {
     setSelectedProject(project);
+    setShowButton(false)
     document.body.style.overflow = 'hidden';
   };
 
   const closePopup = () => {
     setSelectedProject(null);
+    setShowButton(true)
     document.body.style.overflow = '';
   };
 

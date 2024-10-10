@@ -4,6 +4,7 @@ import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandKotlin } from "react-icons/tb";
 
 export const Skills = [
+  // Frontend Skills
   {
     slug: "javascript",
     Component: DiJavascript1,
@@ -11,40 +12,34 @@ export const Skills = [
     Description: () => <>Write scalable and interactive web applications</>,
   },
   {
-    slug: "typecript",
+    slug: "typescript",
     Component: SiTypescript,
     title: "TypeScript",
     Description: () => <>More scalable and secure code with advanced typing capabilities</>,
-  },
-  {
-    slug: "php",
-    Component: DiPhp,
-    title: "PHP",
-    Description: () => <>Build AGIs for Asterisk</>,
-  },
-  {
-    slug: "node.js",
-    Component: SiNodedotjs,
-    title: "Node.js",
-    Description: () => <>Build server-side applications with event-driven and non-blocking I/O model</>,
-  },
-  {
-    slug: "angularjs",
-    Component: SiAngularjs,
-    title: "AngularJS",
-    Description: () => <>Create (SPAs) using the JavaScript</>,
-  },
-  {
-    slug: "vue.js",
-    Component: SiVuedotjs,
-    title: "Vue.js",
-    Description: () => <>Build interactive and user-friendly web interfaces</>,
   },
   {
     slug: "react",
     Component: DiReact,
     title: "React",
     Description: () => <>Build efficient and reusable user interfaces</>,
+  },
+  {
+    slug: "react-native",
+    Component: DiReact,
+    title: "React Native",
+    Description: () => <>Build cross-platform mobile applications</>,
+  },
+  {
+    slug: "angularjs",
+    Component: SiAngularjs,
+    title: "AngularJS",
+    Description: () => <>Create (SPAs) using JavaScript</>,
+  },
+  {
+    slug: "vue.js",
+    Component: SiVuedotjs,
+    title: "Vue.js",
+    Description: () => <>Build interactive and user-friendly web interfaces</>,
   },
   {
     slug: "vuetify",
@@ -65,18 +60,31 @@ export const Skills = [
     Description: () => <>Styling of my React webpages</>,
   },
   {
-    slug: "html",
-    Component: DiHtml5,
-    title: "HTML",
-    Description: () => <>Static webpages and portfolio projects</>,
-  },
-  {
-    slug: "css",
-    Component: SiCss3,
-    title: "CSS",
-    Description: () => <>Styling of my webpages</>,
+    slug: "next.js",
+    Component: SiNextdotjs,
+    title: "Next.js",
+    Description: () => <>Building server-side rendered and statically generated applications</>,
   },
 
+  // Backend Skills
+  {
+    slug: "node.js",
+    Component: SiNodedotjs,
+    title: "Node.js",
+    Description: () => <>Build server-side applications with event-driven and non-blocking I/O model</>,
+  },
+  {
+    slug: "nest.js",
+    Component: SiNodedotjs,
+    title: "NestJS",
+    Description: () => <>Build scalable and maintainable server-side applications</>,
+  },
+  {
+    slug: "php",
+    Component: DiPhp,
+    title: "PHP",
+    Description: () => <>Build AGIs for Asterisk</>,
+  },
   {
     slug: "prisma",
     Component: SiPrisma,
@@ -88,12 +96,6 @@ export const Skills = [
     Component: SiTrpc,
     title: "TRPC",
     Description: () => <>Implement type-safe and efficient communication between client and server</>,
-  },
-  {
-    slug: "asterisk",
-    Component: DiAsterisk,
-    title: "Asterisk",
-    Description: () => <>Develop telephony and communication systems</>,
   },
   {
     slug: "webrtc",
@@ -108,12 +110,31 @@ export const Skills = [
     Description: () => <>Real-time communication between clients and servers</>,
   },
   {
+    slug: "mysql",
+    Component: SiMysql,
+    title: "MySQL",
+    Description: () => <>Storing client and user data</>,
+  },
+  {
+    slug: "psql",
+    Component: DiPostgresql,
+    title: "PostgreSQL",
+    Description: () => <>Storing client and user data</>,
+  },
+  {
+    slug: "asterisk",
+    Component: DiAsterisk,
+    title: "Asterisk",
+    Description: () => <>Develop telephony and communication systems</>,
+  },
+
+  // Infrastructure Skills
+  {
     slug: "nginx",
     Component: DiNginx,
     title: "Nginx",
     Description: () => <>Utilize the high-performance web server, load balancer, and reverse proxy</>,
   },
-
   {
     slug: "docker",
     Component: DiDocker,
@@ -127,24 +148,6 @@ export const Skills = [
     Description: () => <>Simplifies software deployment and improves scalability</>,
   },
   {
-    slug: "next.js",
-    Component: SiNextdotjs,
-    title: "Next.js",
-    Description: () => <>Building server-side rendered and statically generated applications</>,
-  },
-  {
-    slug: "mysql",
-    Component: SiMysql,
-    title: "MySQL",
-    Description: () => <>Storing client and user data</>,
-  },
-  {
-    slug: "psql",
-    Component: DiPostgresql,
-    title: "PostgresSQL",
-    Description: () => <>Storing client and user data</>,
-  },
-  {
     slug: "linux",
     Component: DiLinux,
     title: "Linux",
@@ -153,7 +156,7 @@ export const Skills = [
   {
     slug: "googlecloud",
     Component: DiGoogleCloudPlatform,
-    title: "Google Cloud Plataform",
+    title: "Google Cloud Platform",
     Description: () => <>Scalable and reliable cloud computing services</>,
   },
   {

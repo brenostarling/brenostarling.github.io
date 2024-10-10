@@ -29,8 +29,8 @@ export default class MyDocument extends Document {
   }
   render () {
     return (
-      <Html lang='en-GB'>
-        <Head>
+      <Html>
+        < Head >
           <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
           <meta name="title" content="Breno Starling - Fullstack Developer" />
           <meta name="description" content="I'm Breno Starling, a Fullstack Developer from Betim, MG - Brazil with over three years of experience in Fullstack development. I have expertise in Asterisk, SIP phone system, and WebRTC. Currently, I am proficient in developing frontend applications using React, Vue2, Vue3, AngularJS and Angular2+, while utilizing Node.js for backend development." />
@@ -42,12 +42,12 @@ export default class MyDocument extends Document {
           <meta property="twitter:title" content="Breno Starling - Fullstack Developer" />
           <meta property="twitter:description" content="I'm Breno Starling, a Fullstack Developer from Betim, MG - Brazil with over three years of experience in Fullstack development. I have expertise in Asterisk, SIP phone system, and WebRTC. Currently, I am proficient in developing frontend applications using React, Vue2, Vue3, AngularJS and Angular2+, while utilizing Node.js for backend development." />
           <meta property="twitter:image" content="/images/banner_breno.png" />
-        </Head>
+        </Head >
         <body>
           <Main />
           <NextScript />
         </body>
-      </Html>
+      </Html >
     );
   }
 }

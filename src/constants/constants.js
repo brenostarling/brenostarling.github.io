@@ -45,10 +45,11 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2018, text: 'Started an internship in computer networking at my city hall.', },
-  { year: 2019, text: 'Enrolled in college for computer networking and got promoted to network technician.', },
-  { year: 2020, text: 'Started working at the Network Operations Center (NOC) of an internet service provider.', },
-  { year: 2021, text: 'Graduated from college and began my journey as a developer.', },
-  { year: 2022, text: 'Secured my first full-time job as a developer, working on software development for call center management.', },
-  { year: 2023, text: 'Year still in progress...', },
+  { year: 2018, text: 'Started an internship in computer networking at my city hall.' },
+  { year: 2019, text: 'Enrolled in college for computer networking and got promoted to network technician.' },
+  { year: 2020, text: 'Started working at the Network Operations Center (NOC) of an internet service provider.' },
+  { year: 2021, text: 'Graduated from college and began my journey as a developer.' },
+  { year: 2022, text: 'Secured my first full-time job as a developer, working on software development for call center management.' },
+  { year: 2023, text: 'Became a mid-level fullstack developer and published my first React Native app on the App Store and Play Store.' },
+  { year: 2024, text: 'Started studying Swift to develop iOS apps and in the second half of the year, became a fullstack analyst developer.' },
 ];

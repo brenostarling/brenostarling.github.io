@@ -52,4 +52,5 @@ export const TimeLineData = [
   { year: 2022, text: 'Secured my first full-time job as a developer, working on software development for call center management.' },
   { year: 2023, text: 'Became a mid-level fullstack developer and published my first React Native app on the App Store and Play Store.' },
   { year: 2024, text: 'Started studying Swift to develop iOS apps and in the second half of the year, became a fullstack analyst developer.' },
+  { year: 2025, text: 'Started my post-graduation in software architecture and solution architecture with AI.' }
 ];

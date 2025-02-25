@@ -1,4 +1,4 @@
-import { DiJavascript1, DiTerminal, DiReact, DiHtml5, DiPostgresql, DiAsterisk, DiPhp, DiLinux, DiNginx, DiGoogleCloudPlatform, DiDocker, DiRedis } from "react-icons/di";
+import { DiJavascript1, DiTerminal, DiReact, DiHtml5, DiPostgresql, DiAsterisk, DiPhp, DiLinux, DiNginx, DiGoogleCloudPlatform, DiDocker, DiRedis, DiSwift } from "react-icons/di";
 import { SiAngularjs, SiNextdotjs, SiGit, SiVuedotjs, SiCss3, SiMysql, SiAmazonaws, SiWebrtc, SiSocketdotio, SiNodedotjs, SiPrisma, SiTrpc, SiTypescript, SiQuasar, SiVuetify, SiTailwindcss } from "react-icons/si";
 import { RiFlutterFill } from "react-icons/ri";
 import { TbBrandKotlin } from "react-icons/tb";
@@ -16,6 +16,12 @@ export const Skills = [
     Component: SiTypescript,
     title: "TypeScript",
     Description: () => <>More scalable and secure code with advanced typing capabilities</>,
+  },
+  {
+    slug: "swift",
+    Component: DiSwift,
+    title: "Swift",
+    Description: () => <>Build native iOS and macOS applications</>,
   },
   {
     slug: "react",

@@ -39,6 +39,27 @@ export const projects = [
     // visit: 'https://project.vipuljha.com/website/',
     id: 3,
   },
+    {
+    title: 'Calculadora do Crochê',
+    description: 'A simple web application for calculating labor and expenses for crocheters, arriving at the result with hourly labor cost, product price, and profit.',
+    longDescription: 'A straightforward web application for calculating labor and expenses for crochet artists, arriving at the result with hourly labor cost, product price, and profit. Application created using basic resources and front-end only.',
+    image: '/images/CalculadoraCroche/v2_1.jpg',
+    images: ['/images/CalculadoraCroche/v2_1.jpg','/images/CalculadoraCroche/v2_2.jpg','/images/CalculadoraCroche/v2_3.jpg', '/images/CalculadoraCroche/v2_4.jpg'],
+    tags: ['React', 'Tailwind'],
+    visit: 'https://calculadoradocroche.com.br/',
+    id: 4
+  },
+    {
+    title: 'Omni 1.0',
+    description: "Made a usable and confident tool to attend costumers and show statistics data about the timing to answers messages and related datas",
+    longDescription: "Software for call center support where we handle everything in a single app... WhatsApp (multiple APIs), web chat, phone calls, and email. The software includes pause systems, status updates, classification of interactions, scheduling, and the ability to monitor the number of interactions in the queue.",
+    image: '/images/Omni1.0/Screenshot_1.png',
+    images: ['/images/Omni1.0/Screenshot_1.png', '/images/Omni1.0/Screenshot_2.png', '/images/Omni1.0/Screenshot_3.png',],
+    tags: ['Vue2', 'Vuetify', 'Websocket', 'Libs'],
+    // source: 'https://github.com/lordarcadius/website',
+    // visit: 'https://project.vipuljha.com/website/',
+    id: 2,
+  },
   {
     title: 'ViaExpressa',
     description: "App for managing a delivery company. It allows users to place orders, track order status, and generate reports on customers, employees, or the system overall. ",
@@ -51,26 +72,6 @@ export const projects = [
     id: 0,
   },
   // BuStop
-  {
-    title: 'Omni 1.0',
-    description: "Made a usable and confident tool to attend costumers and show statistics data about the timing to answers messages and related datas",
-    longDescription: "Software for call center support where we handle everything in a single app... WhatsApp (multiple APIs), web chat, phone calls, and email. The software includes pause systems, status updates, classification of interactions, scheduling, and the ability to monitor the number of interactions in the queue.",
-    image: '/images/Omni1.0/Screenshot_1.png',
-    images: ['/images/Omni1.0/Screenshot_1.png', '/images/Omni1.0/Screenshot_2.png', '/images/Omni1.0/Screenshot_3.png',],
-    tags: ['Vue2', 'Vuetify', 'Websocket', 'Libs'],
-    // source: 'https://github.com/lordarcadius/website',
-    // visit: 'https://project.vipuljha.com/website/',
-    id: 2,
-  },
-  {
-    title: 'Calculadora do Crochê',
-    description: 'A simple web application for calculating labor and expenses for crocheters, arriving at the result with hourly labor cost, product price, and profit.',
-    longDescription: 'A straightforward web application for calculating labor and expenses for crochet artists, arriving at the result with hourly labor cost, product price, and profit. Application created using basic resources and front-end only.',
-    image: '/images/CalculadoraCroche/Screenshot_1.jpg',
-    images: ['/images/CalculadoraCroche/Screenshot_1.jpg', '/images/CalculadoraCroche/Screenshot_3.jpg'],
-    tags: ['Vue3', 'Quasar'],
-    id: 4
-  }
 ];
 
 export const TimeLineData = [

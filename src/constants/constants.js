@@ -43,8 +43,8 @@ export const projects = [
     title: 'Calculadora do Crochê',
     description: 'A simple web application for calculating labor and expenses for crocheters, arriving at the result with hourly labor cost, product price, and profit.',
     longDescription: 'A straightforward web application for calculating labor and expenses for crochet artists, arriving at the result with hourly labor cost, product price, and profit. Application created using basic resources and front-end only.',
-    image: '/images/CalculadoraCroche/v2_1.jpg',
-    images: ['/images/CalculadoraCroche/v2_1.jpg','/images/CalculadoraCroche/v2_2.jpg','/images/CalculadoraCroche/v2_3.jpg', '/images/CalculadoraCroche/v2_4.jpg'],
+    image: '/images/CalculadoraCroche/v2_1.png',
+    images: ['/images/CalculadoraCroche/v2_1.png','/images/CalculadoraCroche/v2_2.png','/images/CalculadoraCroche/v2_3.png', '/images/CalculadoraCroche/v2_4.png'],
     tags: ['React', 'Tailwind'],
     visit: 'https://calculadoradocroche.com.br/',
     id: 4

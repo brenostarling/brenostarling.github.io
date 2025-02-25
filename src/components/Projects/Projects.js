@@ -1,24 +1,36 @@
 import React, { useState } from 'react';
 
-import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import ProjectsPopup from './ProjectsPopup'
+import {
+  BlogCard,
+  CardInfo,
+  ExternalLinks,
+  GridContainer,
+  HeaderThree,
+  Hr,
+  Tag,
+  TagList,
+  TitleContent,
+  UtilityList,
+  Img,
+} from './ProjectsStyles';
+import ProjectsPopup from './ProjectsPopup';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
 const Projects = ({ setShowButton }) => {
   const [selectedProject, setSelectedProject] = useState(null);
 
-  const openPopup = (project) => {
-    setSelectedProject(project)
-    setShowButton(false)
-    document.body.style.overflow = 'hidden'
-  }
+  const openPopup = project => {
+    setSelectedProject(project);
+    setShowButton(false);
+    document.body.style.overflow = 'hidden';
+  };
 
   const closePopup = () => {
-    setSelectedProject(null)
-    setShowButton(true)
-    document.body.style.overflow = ''
-  }
+    setSelectedProject(null);
+    setShowButton(true);
+    document.body.style.overflow = '';
+  };
 
   return (
     <Section id="projects">

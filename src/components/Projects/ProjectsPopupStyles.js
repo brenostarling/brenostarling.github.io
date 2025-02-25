@@ -17,15 +17,15 @@ export const PopupContainer = styled.div`
   transform: translate(-50%, -50%);
   width: 85%;
   height: 90%;
-  background-color: #0F1624;
+  background-color: #0f1624;
   border-radius: 10px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 1.5);
-  @media ${(props) => props.theme.breakpoints.md} {
-  width: 90vw;
-  height: 90vh;
+  @media ${props => props.theme.breakpoints.md} {
+    width: 90vw;
+    height: 90vh;
   }
 `;
 
@@ -35,16 +35,16 @@ export const SectionTitle = styled.h2`
   line-height: 4.7rem;
   width: max-content;
   max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
+  background: linear-gradient(121.57deg, #ffffff 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @media ${(props) => props.theme.breakpoints.md} {
-  max-width: 90vw;
-  max-height: 10vh;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  @media ${props => props.theme.breakpoints.md} {
+    max-width: 90vw;
+    max-height: 10vh;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
   }
-`
+`;
 
 export const PopupHeader = styled.div`
   display: flex;
@@ -72,7 +72,7 @@ export const PopupLongDescription = styled.p`
   line-height: 24px;
   font-size: 1.7rem;
   text-align: justify;
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.md} {
     margin: 0;
     width: 70vw;
     max-width: 70vw;
@@ -85,12 +85,12 @@ export const PopupLongDescription = styled.p`
     padding-bottom: 10px;
     padding-left: 10px;
     overflow-y: scroll;
-}
+  }
 `;
 
 export const SlideshowContainer = styled.div`
   height: 90vh;
-  width: ${(props) => (props.fullscreenMode ? '100%' : '60%')};
+  width: ${props => (props.fullscreenMode ? '100%' : '60%')};
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -98,10 +98,10 @@ export const SlideshowContainer = styled.div`
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   transition: width 0.3s ease;
   &:hover {
-    width: ${(props) => (props.fullscreenMode ? '100%' : '61%')};
+    width: ${props => (props.fullscreenMode ? '100%' : '61%')};
   }
 
-    @media ${(props) => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.md} {
     width: 54vw;
     height: 23vh;
     max-width: 54vw;
@@ -129,8 +129,8 @@ export const SlideshowArrow = styled.span`
   border-radius: 4px;
   z-index: 2;
 
-  ${(props) => props.direction === 'left' && `left: 10px;`}
-  ${(props) => props.direction === 'right' && `right: 10px;`}
+  ${props => props.direction === 'left' && `left: 10px;`}
+  ${props => props.direction === 'right' && `right: 10px;`}
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.6);
@@ -150,7 +150,7 @@ export const InfoContainer = styled.div`
   justify-content: flex-end;
   flex-grow: 1;
 
-  @media ${(props) => props.theme.breakpoints.md} {
+  @media ${props => props.theme.breakpoints.md} {
     display: flex;
     align-items: center;
   }
@@ -175,11 +175,11 @@ export const Hr = styled.hr`
 `;
 
 export const TagList = styled.ul`
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 `;
 
 export const Tag = styled.li`
-color: #d8bfbf;
-font-size: 1.7rem;
+  color: #d8bfbf;
+  font-size: 1.7rem;
 `;

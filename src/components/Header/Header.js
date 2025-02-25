@@ -1,17 +1,19 @@
 import Link from 'next/link';
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillTwitterCircle, AiOutlineWhatsApp } from 'react-icons/ai';
+import {
+  AiFillGithub,
+  AiFillInstagram,
+  AiFillLinkedin,
+  AiFillTwitterCircle,
+  AiOutlineWhatsApp,
+} from 'react-icons/ai';
 import { Container, Div1, Div2, Div3, NavLink, SocialIcons } from './HeaderStyles';
 
 const Header = () => (
   <Container>
     <Div1>
-      <Link
-        href="/"
-        style={{ display: 'flex', alignItems: 'center', color: "white" }}>
-
+      <Link href="/" style={{ display: 'flex', alignItems: 'center', color: 'white' }}>
         <img src="/logo_nome.png" height={40} width={150} style={{ marginLeft: '30px' }} />
-
       </Link>
     </Div1>
     <Div2>

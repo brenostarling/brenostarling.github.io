@@ -38,7 +38,12 @@ const Home = () => {
       <Technologies />
       <Timeline />
       {/* <Acomplishments /> */}
-      {showButton && (<FloatingButton onClick={scrollToTop}> <FaArrowUp /> </FloatingButton>)}
+      {showButton && (
+        <FloatingButton onClick={scrollToTop}>
+          {' '}
+          <FaArrowUp />{' '}
+        </FloatingButton>
+      )}
     </Layout>
   );
 };

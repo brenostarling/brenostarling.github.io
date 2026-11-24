@@ -46,6 +46,30 @@ export const projects = [
     id: 5,
   },
   {
+    title: 'Panificadora Aurora',
+    description:
+      'Payment control system for a bakery, replacing paper notes with a searchable list, status tracking, a financial dashboard and PDF exports.',
+    longDescription:
+      'Internal system built for a bakery to control customer payment notes and make the staff routine easier. Employees register each note with client, value, issue date and a photo of the paper receipt, then follow it through pending, in progress, resolved or cancelled with a full status history. Includes filters by status, client group, client, issue period and value range, bulk status changes, PDF and ZIP exports, a dashboard with the top clients by open value and charts by status, plus clients, client groups and users with roles (admin, employee and customer) that define who can see which notes. Screenshots use demo data.',
+    image: '/images/PanificadoraAurora/1.jpg',
+    images: [
+      '/images/PanificadoraAurora/1.jpg',
+      '/images/PanificadoraAurora/2.jpg',
+      '/images/PanificadoraAurora/3.jpg',
+      '/images/PanificadoraAurora/4.jpg',
+      '/images/PanificadoraAurora/5.jpg',
+      '/images/PanificadoraAurora/6.jpg',
+      '/images/PanificadoraAurora/7.jpg',
+      '/images/PanificadoraAurora/8.jpg',
+      '/images/PanificadoraAurora/9.jpg',
+      '/images/PanificadoraAurora/10.jpg',
+      '/images/PanificadoraAurora/11.jpg',
+      '/images/PanificadoraAurora/12.jpg',
+    ],
+    tags: ['TypeScript', 'Next.js', 'React', 'TailwindCss', 'Prisma', 'PostgreSQL'],
+    id: 9,
+  },
+  {
     title: 'Studio Fotografia Industrial',
     description:
       'Landing page for a construction site monitoring and industrial photography service, with an interactive timelapse player and a WhatsApp quote flow.',

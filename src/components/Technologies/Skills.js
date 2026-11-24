@@ -30,6 +30,9 @@ import {
   SiQuasar,
   SiVuetify,
   SiTailwindcss,
+  SiRabbitmq,
+  SiGraphql,
+  SiNeo4J,
 } from 'react-icons/si';
 import { RiFlutterFill } from 'react-icons/ri';
 import { TbBrandKotlin } from 'react-icons/tb';
@@ -137,6 +140,24 @@ export const Skills = [
     Description: () => (
       <>Implement type-safe and efficient communication between client and server</>
     ),
+  },
+  {
+    slug: 'graphql',
+    Component: SiGraphql,
+    title: 'GraphQL',
+    Description: () => <>Flexible APIs where clients ask for exactly the data they need</>,
+  },
+  {
+    slug: 'rabbitmq',
+    Component: SiRabbitmq,
+    title: 'RabbitMQ',
+    Description: () => <>Message queues for asynchronous processing between services and workers</>,
+  },
+  {
+    slug: 'neo4j',
+    Component: SiNeo4J,
+    title: 'Neo4j',
+    Description: () => <>Graph database to model and query highly connected data</>,
   },
   {
     slug: 'webrtc',

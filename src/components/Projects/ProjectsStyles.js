@@ -4,6 +4,7 @@ export const Img = styled.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: top left;
   overflow: hidden;
 `;
 
@@ -12,7 +13,7 @@ export const GridContainer = styled.section`
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   padding-top: 3rem;
   padding-bottom: 3rem;
-  place-items: center;
+  place-items: start center;
   column-gap: 1rem;
   row-gap: 3rem;
   @media ${props => props.theme.breakpoints.sm} {
@@ -111,10 +112,17 @@ export const ExternalLinks = styled.a`
 
 export const TagList = styled.ul`
   display: flex;
-  justify-content: space-around;
-  padding: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.5rem 2rem 2rem;
+  list-style: none;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid rgba(216, 191, 191, 0.35);
+  border-radius: 999px;
+  white-space: nowrap;
 `;

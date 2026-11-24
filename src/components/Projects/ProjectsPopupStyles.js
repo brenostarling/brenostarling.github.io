@@ -89,8 +89,9 @@ export const PopupLongDescription = styled.p`
 `;
 
 export const SlideshowContainer = styled.div`
-  height: 90vh;
-  width: ${props => (props.fullscreenMode ? '100%' : '60%')};
+  flex: 1 1 0;
+  min-height: 0;
+  width: ${props => (props.fullscreenMode ? '100%' : '85%')};
   position: relative;
   overflow: hidden;
   margin: 0 auto;
@@ -98,21 +99,22 @@ export const SlideshowContainer = styled.div`
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
   transition: width 0.3s ease;
   &:hover {
-    width: ${props => (props.fullscreenMode ? '100%' : '61%')};
+    width: ${props => (props.fullscreenMode ? '100%' : '86%')};
   }
 
   @media ${props => props.theme.breakpoints.md} {
-    width: 54vw;
-    height: 23vh;
-    max-width: 54vw;
-    max-height: 23vh;
+    width: 80vw;
+    height: 28vh;
+    max-width: 80vw;
+    max-height: 28vh;
   }
 `;
 
 export const SlideshowImage = styled.img`
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-color: #0b111c;
   cursor: pointer;
 `;
 
@@ -141,14 +143,14 @@ export const TagsContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-grow: 1;
+  flex: 0 0 auto;
 `;
 
 export const InfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-grow: 1;
+  flex: 0 0 auto;
 
   @media ${props => props.theme.breakpoints.md} {
     display: flex;
@@ -176,10 +178,18 @@ export const Hr = styled.hr`
 
 export const TagList = styled.ul`
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 0;
+  list-style: none;
 `;
 
 export const Tag = styled.li`
   color: #d8bfbf;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  padding: 0.4rem 1.2rem;
+  border: 1px solid rgba(216, 191, 191, 0.35);
+  border-radius: 999px;
+  white-space: nowrap;
 `;

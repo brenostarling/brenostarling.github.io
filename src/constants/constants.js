@@ -1,5 +1,45 @@
 export const projects = [
   {
+    title: 'ProdFlow',
+    description:
+      'Event photo platform with face recognition search over Google Drive folders, public event portals with customizable themes and a real-time mobile preview.',
+    longDescription:
+      'Platform for photo and video production companies. Operators connect Google Drive storages, scan and index folders with a Python face recognition worker (RabbitMQ), and search the whole archive from a single reference photo. Event galleries are published as public portals (exposições) with their own slug, banner, availability window and visual theme (logos and colors) edited with a live mobile preview, where attendees can find their own photos by selfie. Includes scan history, metrics, audit log, users and permissions. Screenshots use demo data.',
+    image: '/images/ProdFlow/1.jpg',
+    images: [
+      '/images/ProdFlow/1.jpg',
+      '/images/ProdFlow/2.jpg',
+      '/images/ProdFlow/3.jpg',
+      '/images/ProdFlow/4.jpg',
+      '/images/ProdFlow/5.jpg',
+      '/images/ProdFlow/6.jpg',
+      '/images/ProdFlow/7.jpg',
+      '/images/ProdFlow/8.jpg',
+    ],
+    tags: ['TypeScript', 'React', 'Vite', 'NestJS', 'Prisma', 'PostgreSQL', 'RabbitMQ', 'Python'],
+    id: 6,
+  },
+  {
+    title: 'MinasCar CRM',
+    description:
+      'CRM for an auto parts distributor with customer service queue, commercial opportunities kanban, customer history, WhatsApp inbox and sales reports.',
+    longDescription:
+      'CRM built for a B2B auto parts distributor. Sellers work from a service (atendimentos) queue with status, pauses and a full customer timeline; managers follow the commercial opportunities kanban, tasks and routines, and reports for service, calls, WhatsApp and seller performance. Integrated with Bling (orders, proposals and top products per customer) and a WhatsApp inbox with labels and message templates via Evolution API. Screenshots use demo data.',
+    image: '/images/MinasCar/1.jpg',
+    images: [
+      '/images/MinasCar/1.jpg',
+      '/images/MinasCar/2.jpg',
+      '/images/MinasCar/3.jpg',
+      '/images/MinasCar/4.jpg',
+      '/images/MinasCar/5.jpg',
+      '/images/MinasCar/6.jpg',
+      '/images/MinasCar/7.jpg',
+      '/images/MinasCar/8.jpg',
+    ],
+    tags: ['TypeScript', 'Next.js', 'React', 'Prisma', 'PostgreSQL', 'WhatsApp', 'Bling'],
+    id: 5,
+  },
+  {
     title: 'ERP Pizzaria',
     description:
       'ERP for a pizza company, featuring dynamic mobile app homepage construction for delivery orders, order management, inventory control, and sales reporting.',
@@ -136,5 +176,9 @@ export const TimeLineData = [
   {
     year: 2025,
     text: 'Started my post-graduation in software architecture and solution architecture with AI.',
+  },
+  {
+    year: 2026,
+    text: "Built my biggest solo project, ProdFlow, a face recognition photo platform that was used at Fiat's 50th anniversary celebration.",
   },
 ];

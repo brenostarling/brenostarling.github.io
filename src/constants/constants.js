@@ -15,6 +15,9 @@ export const projects = [
       '/images/ProdFlow/6.jpg',
       '/images/ProdFlow/7.jpg',
       '/images/ProdFlow/8.jpg',
+      '/images/ProdFlow/9.jpg',
+      '/images/ProdFlow/10.jpg',
+      '/images/ProdFlow/11.jpg',
     ],
     tags: ['TypeScript', 'React', 'Vite', 'NestJS', 'Prisma', 'PostgreSQL', 'RabbitMQ', 'Python'],
     id: 6,
@@ -35,9 +38,47 @@ export const projects = [
       '/images/MinasCar/6.jpg',
       '/images/MinasCar/7.jpg',
       '/images/MinasCar/8.jpg',
+      '/images/MinasCar/9.jpg',
+      '/images/MinasCar/10.jpg',
+      '/images/MinasCar/11.jpg',
     ],
     tags: ['TypeScript', 'Next.js', 'React', 'Prisma', 'PostgreSQL', 'WhatsApp', 'Bling'],
     id: 5,
+  },
+  {
+    title: 'Studio Fotografia Industrial',
+    description:
+      'Landing page for a construction site monitoring and industrial photography service, with an interactive timelapse player and a WhatsApp quote flow.',
+    longDescription:
+      'Commercial landing page for a company that documents construction sites and large projects with fixed cameras and delivers a cinematic timelapse of the whole transformation. Features a hero focused on the offer, a scroll-driven timelapse player that advances day by day, a section about the on-site equipment, results and a floating WhatsApp button to request quotes. Smooth scrolling and animations, responsive layout.',
+    image: '/images/StudioFotografia/1.jpg',
+    images: [
+      '/images/StudioFotografia/1.jpg',
+      '/images/StudioFotografia/2.jpg',
+      '/images/StudioFotografia/3.jpg',
+      '/images/StudioFotografia/4.jpg',
+      '/images/StudioFotografia/5.jpg',
+      '/images/StudioFotografia/6.jpg',
+    ],
+    tags: ['TypeScript', 'Next.js', 'React', 'TailwindCss', 'Framer Motion'],
+    id: 7,
+  },
+  {
+    title: 'Sumye Ishy Advocacia',
+    description:
+      'Institutional landing page for a criminal defense lawyer, with a refined editorial look, practice areas, service steps and direct WhatsApp contact.',
+    longDescription:
+      'Institutional landing page for a criminal law attorney in Minas Gerais. Elegant editorial design with serif typography and a sober palette, presenting the practice areas (drug law, police investigations and case follow-up), the lawyer biography, how the service works and contact channels with a direct WhatsApp call to action. Built with Next.js, Tailwind and Framer Motion, fully responsive.',
+    image: '/images/SumyeIshy/1.jpg',
+    images: [
+      '/images/SumyeIshy/1.jpg',
+      '/images/SumyeIshy/2.jpg',
+      '/images/SumyeIshy/3.jpg',
+      '/images/SumyeIshy/4.jpg',
+      '/images/SumyeIshy/5.jpg',
+    ],
+    tags: ['TypeScript', 'Next.js', 'React', 'TailwindCss', 'Framer Motion'],
+    id: 8,
   },
   {
     title: 'ERP Pizzaria',
